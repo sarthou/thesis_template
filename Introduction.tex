@@ -1,0 +1,22 @@
+
+\ifdefined\included
+\else
+\setcounter{chapter}{0} %% Numéro du chapitre précédent ;)
+\dominitoc
+\faketableofcontents
+\fi
+
+\chapter{Introduction}
+\minitoc
+
+This is the beginning of my thesis.
+
+\section{What a great section}
+
+I like images so I put this one~\ref{fig:intro}. I took it from there~\cite{sarthou2021knowledge}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{figures/introduction/camera_store_2.png}
+\caption{\label{fig:intro} What a great image. }
+\end{figure}

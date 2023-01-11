@@ -1,0 +1,37 @@
+\usepackage[disable,colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\usepackage{xargs}   % Use more than one optional parameter in a new commands
+\usepackage{xcolor}  % Coloured text
+\usepackage{xspace}
+\usepackage{hyperref}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bbm}
+%\usepackage{mathbbol}
+
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{courier}
+
+\usepackage{moreverb}
+
+\usepackage[bottom]{footmisc}
+
+\definecolor{lightgray}{gray}{0.5}
+
+\usepackage{listings}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%	  TODO commands    %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\marginparwidth}{3cm}
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=olive,backgroundcolor=olive!25,bordercolor=olive,#1]{#2}}
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=violet,backgroundcolor=violet!25,bordercolor=violet,#1]{#2}}
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+
